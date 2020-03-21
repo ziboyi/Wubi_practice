@@ -62,19 +62,19 @@ def call_level1():
     result = []
     for _ in range(100):
         query.append(random.choice(list(level1_dict.keys())))
-        result.append(level1_dict[query[-1]])
+        result.append(full_code_dict[query[-1]])
     t.delete(0.0, tkinter.END)
     t.insert(0.0, ''.join(query))
 
     def entry_action(event):
         if event.char == ' ':
-            if result[0] == e.get().strip():
+            if e.get().strip() in result[0]:
                 del(query[0])
                 t.delete(0.0, tkinter.END)
                 t.insert(0.0, ''.join(query))
                 del(result[0])
                 lb_hint['text'] = ''
-            else: lb_hint['text'] = 'hint: ' + result[0]
+            else: lb_hint['text'] = 'hint: ' + ' '.join(result[0])
             e.delete(0, tkinter.END)
     e.bind('<Key>', entry_action)
 
@@ -83,19 +83,19 @@ def call_level2():
     result = []
     for _ in range(100):
         query.append(random.choice(list(level2_dict.keys())))
-        result.append(level2_dict[query[-1]])
+        result.append(full_code_dict[query[-1]])
     t.delete(0.0, tkinter.END)
     t.insert(0.0, ''.join(query))
 
     def entry_action(event):
         if event.char == ' ':
-            if result[0] == e.get().strip():
+            if e.get().strip() in result[0]:
                 del(query[0])
                 t.delete(0.0, tkinter.END)
                 t.insert(0.0, ''.join(query))
                 del(result[0])
                 lb_hint['text'] = ''
-            else: lb_hint['text'] = 'hint: ' + result[0]
+            else: lb_hint['text'] = 'hint: ' + ' '.join(result[0])
             e.delete(0, tkinter.END)
     e.bind('<Key>', entry_action)
 
@@ -104,19 +104,19 @@ def call_level3():
     result = []
     for _ in range(100):
         query.append(random.choice(list(level3_dict.keys())))
-        result.append(level3_dict[query[-1]])
+        result.append(full_code_dict[query[-1]])
     t.delete(0.0, tkinter.END)
     t.insert(0.0, ''.join(query))
 
     def entry_action(event):
         if event.char == ' ':
-            if result[0] == e.get().strip():
+            if e.get().strip() in result[0]:
                 del(query[0])
                 t.delete(0.0, tkinter.END)
                 t.insert(0.0, ''.join(query))
                 del(result[0])
                 lb_hint['text'] = ''
-            else: lb_hint['text'] = 'hint: ' + result[0]
+            else: lb_hint['text'] = 'hint: ' + ' '.join(result[0])
             e.delete(0, tkinter.END)
     e.bind('<Key>', entry_action)
 
