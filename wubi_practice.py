@@ -32,8 +32,8 @@ keyboard_dict = {}
 for i in list('金人月白禾言立水火之工木大土王目日口田山已子女又纟'):
     keyname_dict[i] = full_code_dict[i]
 
-for i in list('文方广六辛门小米儿夕八用乃手斤竹彳七戈丁西犬古石三厂士二干十寸匸'
-              +'雨一五卜上止虫川甲四皿车力幺匕弓巴马刀九臼孑了也耳巳己由贝几廿'):
+for i in list('文方广六辛门小米儿夕八用乃手斤竹彳七戈丁西犬古石三厂士二干十寸匸豕'
+              +'雨一五卜上止虫川甲四皿车力幺匕弓巴马刀九臼孑了也耳巳己由贝几廿戋'):
     keyboard_dict[i] = full_code_dict[i]
 
 
